@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		
+	</head>
+	<body>
+		<h1>Listado</h1>
+		<table>
+			<th:block th:each="p: ${lstCursos}">
+				<tr>
+					<td th:text="${p.idSubject}"></td>
+					<td th:text="${p.name}"></td>
+				</tr>
+			</th:block>
+		</table>
+		
+	</body>
+	
+</html>
